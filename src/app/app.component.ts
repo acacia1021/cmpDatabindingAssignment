@@ -8,7 +8,18 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'cmp-databinding-assignment';
 
+  oddNumbers: number[] = [];
+  evenNumbers: number[] = [];
+
+
   onIntervalFired(firedNumber: number) {
-    console.log(firedNumber);
+    // console.log(firedNumber);
+    if (firedNumber % 2 === 0) {
+      this.evenNumbers.push(firedNumber);
+
+    }
+    else {
+      this.oddNumbers.push(firedNumber);
+    }
   }
 }
