@@ -6,4 +6,4 @@
 
 <br>
 
-<app-even></app-even>
+<app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
