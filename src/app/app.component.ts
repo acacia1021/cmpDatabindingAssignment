@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cmp-databinding-assignment';
+
+  onIntervalFired(firedNumber: number) {
+    console.log(firedNumber);
+  }
 }
